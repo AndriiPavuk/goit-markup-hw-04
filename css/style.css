@@ -29,7 +29,29 @@ body {
   border: 0;
 }
 
+
 /*---------------HEADER (INDEX & PORTFOLIO)----------------*/
+.header {
+  display: flex;
+    height: 80px;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-list-one {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-list-two {
+  display: flex;
+  flex-direction: row;
+}
 
 .header-logotip {
   text-decoration: none;
