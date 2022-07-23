@@ -8,6 +8,34 @@
   --color6: #757575;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+addres {
+  font-style: normal;
+}
+a {
+  color: currentColor;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--color6);
@@ -29,30 +57,35 @@ body {
   border: 0;
 }
 
-
 /*---------------HEADER (INDEX & PORTFOLIO)----------------*/
-.header {
+/* --------------STILE---------------- */
+.container-header {
   display: flex;
-    height: 80px;
-    width: 1600px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
-.nav {
+.header-logotip {
+  display: flex;
+  width: 145px;
+  height: 31px;
+  padding-left: 215px;
+}
+
+.container-list {
   display: flex;
   flex-direction: row;
+  width: 294px;
+  height: 16px;
+  justify-content: space-around;
+  margin-left: 93px;
 }
 
-.header-list-one {
-  display: flex;
-  flex-direction: row;
-}
-
-.header-list-two {
-  display: flex;
-  flex-direction: row;
-}
-
+/* --------------STILE---------------- */
 .header-logotip {
   text-decoration: none;
   font-family: var(--font-family2);
