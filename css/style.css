@@ -365,8 +365,8 @@ body {
 
 /*------------MAIN (PORTFOLIO)------------*/
 
-
-.main-button-port, .secondary {
+.main-button-port,
+.secondary {
   font-family: "Roboto", sans-serif;
   font-style: inherit;
   font-weight: 500;
@@ -423,6 +423,7 @@ button.current {
 .card-content {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+  border-top: none;
 }
 
 .examples-cards > .item {
