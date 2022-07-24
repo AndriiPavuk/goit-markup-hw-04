@@ -6,6 +6,14 @@
   --color4: #ffffff;
   --color5: #2f303a;
   --color6: #757575;
+  --color7: #f5f4fa;
+  --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --card-gap: 30px;
+}
+
+header {
+  border-bottom: 1px solid #ececec;
 }
 
 p,
@@ -16,6 +24,12 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul,
@@ -30,6 +44,7 @@ addres {
 a {
   color: currentColor;
   cursor: pointer;
+  text-decoration: none;
 }
 
 button {
@@ -58,34 +73,51 @@ body {
 }
 
 /*---------------HEADER (INDEX & PORTFOLIO)----------------*/
-/* --------------STILE---------------- */
-.container-header {
-  display: flex;
-  width: 100%;
-  max-width: 1600px;
-  height: 80px;
+/* --------------BOX---------------- */
+
+.container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.header-nav {
+  display: flex;
   align-items: center;
 }
 
-.header-logotip {
+.site-header {
   display: flex;
-  width: 145px;
-  height: 31px;
-  padding-left: 215px;
-}
-
-.container-list {
-  display: flex;
-  flex-direction: row;
-  width: 294px;
-  height: 16px;
-  justify-content: space-around;
   margin-left: 93px;
 }
 
-/* --------------STILE---------------- */
+.site-header .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-header .header-link .header-contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-header {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-header .item + .item {
+  margin-left: 50px;
+}
+
+.contact-header .header-link .header-contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+/* --------------BOX---------------- */
+
 .header-logotip {
   text-decoration: none;
   font-family: var(--font-family2);
@@ -143,9 +175,11 @@ body {
 
 /*------------MAIN (INDEX)------------*/
 
+/* -----------CAP----------- */
 .main-sctn-one {
   background-color: var(--color5);
-  text-transform: uppercase;
+  text-align: center;
+  padding: 200px 0;
 }
 
 .visually-hiden {
@@ -166,6 +200,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--color4);
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .main-button {
@@ -176,6 +212,11 @@ body {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--color4);
+  border-radius: 4px;
+  border: none;
+  min-width: 200px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .main-button:focus {
@@ -184,6 +225,43 @@ body {
 
 .main-button:hover {
   background-color: var(--color3);
+}
+/* -----------CAP----------- */
+
+/* -----------FEATURES----------- */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--color2);
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-link {
+  width: calc((100% - (3 * var(--card-gap))) / 4);
+}
+
+.features-link:not(:nth-child(4n)) {
+  margin-right: var(--card-gap);
+}
+.features-link:not(:nth-last-child(-n + 4)) {
+  margin-bottom: var(--card-gap);
+}
+
+.features .three-capital-features {
+  margin-bottom: 10px;
 }
 
 .three-capital-features {
@@ -200,7 +278,57 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+/* -----------FEATURES----------- */
 
+/* ------------WhatWeDo---------- */
+
+.main-sctn-three {
+  padding-top: 0;
+}
+
+.wwd {
+  display: flex;
+}
+
+.wwd > .wwd-item + .wwd-item {
+  margin-left: var(--card-gap);
+}
+/* ------------WhatWeDo---------- */
+/* ---------Our team--------- */
+
+.maun-sctn-four {
+  background-color: var(--color7);
+}
+
+.team-set {
+  display: flex;
+}
+
+.team-card {
+  width: calc((100% - (3 * var(--card-gap))) / 4);
+  box-shadow: var(--team-card-shadow);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--color4);
+}
+
+.team-card:not(:nth-last-child(4)) {
+  margin-left: var(--card-gap);
+}
+
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.maun-sctn-four .three-capital-team {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.maun-sctn-four .main-paragraph-team {
+  text-align: center;
+}
+/* ---------Our team--------- */
 .two-capital {
   font-weight: 700;
   font-size: 36px;
@@ -208,6 +336,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color2);
+  margin-bottom: 50px;
 }
 
 .three-capital-team {
@@ -229,7 +358,8 @@ body {
 
 /*------------MAIN (PORTFOLIO)------------*/
 
-.main-button-port {
+
+.main-button-port .secondary {
   font-family: "Roboto", sans-serif;
   font-style: inherit;
   font-weight: 500;
@@ -237,16 +367,64 @@ body {
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--color2);
+  padding: 6px 22px;
+  background-color: var(--color7);
+  border-radius: 4px;
 }
 
-.main-button-port:hover {
+.main-button-port .secondary:hover {
   color: var(--color4);
   background-color: var(--color1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.main-button-port .secondary:focus {
+  color: var(--color4);
+  background-color: var(--color1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter.list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter .item + .item {
+  margin-left: 8px;
 }
 
 button.current {
   color: var(--color4);
   background-color: var(--color1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* ------------BUTTON-------- */
+/* -----------CARDS--------- */
+
+.examples-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-gap));
+  margin-top: calc(-1 * var(--card-gap));
+}
+
+.card-content {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.examples-cards > .item {
+  flex-basis: calc(100% / 3 - var(--card-gap));
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+}
+
+.work-examples .three-capital-cards {
+  margin-bottom: 4px;
 }
 
 .three-capital-cards {
@@ -267,8 +445,19 @@ button.current {
 /*------------MAIN (PORTFOLIO)------------*/
 
 /*-------FOOTER (INDEX & PORTFOLIO)-----*/
-.footer {
+
+footer {
   background-color: var(--color5);
+  padding: 60px 0;
+}
+
+.bottom .footer-logotip {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.bottom-panel .item + .item {
+  margin-top: 9px;
 }
 
 .footer-logotip {
