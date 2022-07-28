@@ -1,5 +1,5 @@
 :root {
-  --font-family2: "Raleway", sans-serif;
+  --font-family2: 'Raleway', sans-serif;
   --color1: #2196f3;
   --color2: #212121;
   --color3: #188ce8;
@@ -7,8 +7,8 @@
   --color5: #2f303a;
   --color6: #757575;
   --color7: #f5f4fa;
-  --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-gap: 30px;
 }
 
@@ -52,7 +52,7 @@ button {
 }
 
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--color6);
   font-size: 14px;
 }
@@ -179,9 +179,18 @@ body {
 
 /* -----------CAP----------- */
 .main-sctn-one {
-  background-color: var(--color5);
   text-align: center;
+  background-color: #c4c4c4;
   padding: 200px 0;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../picture/comand.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .visually-hiden {
@@ -255,6 +264,7 @@ body {
 .features {
   display: flex;
   flex-wrap: wrap;
+  gap: var(--card-gap);
 }
 
 .features-link {
@@ -266,6 +276,20 @@ body {
 }
 .features-link:not(:nth-last-child(-n + 4)) {
   margin-bottom: var(--card-gap);
+}
+
+.features-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: var(--color7);
+  margin-bottom: var(--card-gap);
+}
+
+.features-icon svg {
+  width: 70px;
+  height: 70px;
 }
 
 .features .three-capital-features {
@@ -368,7 +392,7 @@ body {
 
 .main-button-port,
 .secondary {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: inherit;
   font-weight: 500;
   font-size: 16px;
