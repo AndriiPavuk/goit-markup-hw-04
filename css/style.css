@@ -271,9 +271,6 @@ body {
   width: calc((100% - (3 * var(--card-gap))) / 4);
 }
 
-.features-link:not(:nth-child(4n)) {
-  margin-right: var(--card-gap);
-}
 .features-link:not(:nth-last-child(-n + 4)) {
   margin-bottom: var(--card-gap);
 }
