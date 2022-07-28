@@ -38,7 +38,7 @@ ol {
   padding-left: 0;
 }
 
-addres {
+address {
   font-style: normal;
 }
 a {
@@ -104,6 +104,9 @@ body {
 }
 
 .contact-header {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   display: flex;
   margin-left: auto;
 }
@@ -116,6 +119,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 /* --------------BOX---------------- */
 
 .header-logotip {
@@ -172,6 +176,12 @@ body {
 
 .header-contact:focus {
   color: var(--color1);
+}
+
+.envelope,
+.smartphone {
+  margin-right: 10px;
+  fill: currentColor;
 }
 /*------------HEADER (INDEX & PORTFOLIO)-----------*/
 
