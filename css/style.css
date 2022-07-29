@@ -370,7 +370,7 @@ body {
 }
 
 .network-icon {
- display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -425,6 +425,38 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* -----MAIN-CLIENTS------ */
+.client-sumbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+
+  border: 1px solid var(--color8);
+  border-radius: 4px;
+  color: var(--color8);
+}
+.main-client {
+  width: calc(100% - (5 * var(--card-gap)) / 6);
+  height: 92px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--card-gap);
+}
+
+.client-sumbol:hover,
+.client-sumbol:focus {
+  border: 1px solid var(--color1);
+  border-radius: 4px;
+  color: var(--color1);
+}
+
+.client-icon {
+  fill: currentColor;
+}
 /*-------MAIN (INDEX)-------*/
 
 /*------------MAIN (PORTFOLIO)------------*/
