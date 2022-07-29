@@ -437,7 +437,7 @@ body {
 }
 
 .client-icon {
-  fill: var(--color8);
+  fill: currentColor;
 }
 
 .main-client {
@@ -457,7 +457,6 @@ body {
   border-radius: 4px;
   color: var(--color1);
 }
-
 
 /*-------MAIN (INDEX)-------*/
 
