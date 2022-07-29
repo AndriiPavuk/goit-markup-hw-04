@@ -398,8 +398,8 @@ body {
 }
 .main-icon .ni-item:hover,
 .main-icon .ni-item:focus {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
+  color: var(--color4);
+  background-color: var(--color1);
 }
 /* ---------Our team--------- */
 .two-capital {
