@@ -7,6 +7,7 @@
   --color5: #2f303a;
   --color6: #757575;
   --color7: #f5f4fa;
+  --color8: #afb1b8;
   --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-gap: 30px;
@@ -57,6 +58,8 @@ body {
   font-size: 14px;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -101,6 +104,7 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
 .contact-header {
@@ -110,14 +114,11 @@ body {
   display: flex;
   margin-left: auto;
   flex-direction: row;
+  align-items: center;
 }
 
 .contact-header .item + .item {
   margin-left: 50px;
-}
-
-.contact-header .header-link .header-contact {
-  padding: 32px 0;
 }
 
 /* --------------BOX---------------- */
@@ -366,6 +367,39 @@ body {
 
 .maun-sctn-four .main-paragraph-team {
   text-align: center;
+}
+
+.network-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.ni-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.main-icon .ni-item {
+  color: var(--color8);
+}
+
+.ni-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.main-icon .ni-item:hover,
+.main-icon .ni-item:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
 }
 /* ---------Our team--------- */
 .two-capital {
