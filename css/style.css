@@ -555,7 +555,13 @@ button.current {
 footer {
   background-color: var(--color5);
   padding: 60px 0;
+  display: flex;
 }
+
+.prt {
+  display: flex;
+}
+
 
 .bottom .footer-logotip {
   display: block;
@@ -599,6 +605,38 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* ------------COLUM-TWO---------- */
+
+.footer-networks {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+.footer-networks {
+  min-width: 206px;
+  min-height: 80px;
+  margin-top: 12px;
+  margin-left: 70px;
+}
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color4);
+}
+.footer-ni .ni-item {
+  color: var(--color4);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-ni .ni-item:hover,
+.footer-ni .ni-item:focus {
+  background-color: var(--color1);
 }
 
 /*-------FOOTER (INDEX & PORTFOLIO)-----*/
