@@ -558,11 +558,6 @@ footer {
   display: flex;
 }
 
-.prt {
-  display: flex;
-}
-
-
 .bottom .footer-logotip {
   display: block;
   margin-bottom: 20px;
@@ -570,6 +565,10 @@ footer {
 
 .bottom-panel .item + .item {
   margin-top: 9px;
+}
+
+footer .bottom {
+  display: flex;
 }
 
 .footer-logotip {
@@ -610,9 +609,10 @@ footer {
 /* ------------COLUM-TWO---------- */
 
 .footer-networks {
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
+  min-width: 206px;
+  min-height: 80px;
+  margin-top: 12px;
+  margin-left: 70px;
 }
 
 .footer-networks {
